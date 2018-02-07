@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="117dp"
+        android:layout_height="78dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cover_default" />
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/img_home"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="博时基金：明年一季度A股预计风格切换、如何布局？"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_home_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/yiwancheng"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_home"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/img_home"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距截止仅剩:"
+            android:textColor="@color/text_red"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/global"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text=":"
+                android:textColor="@color/global" />
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/global"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text=":"
+                android:textColor="@color/global" />
+
+            <TextView
+                android:id="@+id/tv_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/global"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_home_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_home"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/img_home"
+        android:drawableLeft="@mipmap/suo"
+        android:drawablePadding="4dp"
+        android:text="已截止购买"
+        android:textColor="@color/text_red"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_home_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_home"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="32dp"
+        android:text="¥ 60"
+        android:textColor="@color/text_red"
+        android:textSize="16sp" />
+
+</RelativeLayout>

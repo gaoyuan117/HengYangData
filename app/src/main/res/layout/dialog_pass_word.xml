@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/coner_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请输入您的6位独立密码"
+            android:textColor="@color/global"
+            android:textSize="16sp" />
+
+        <com.jzbwlkj.hengyangdata.view.PasswordView
+            android:id="@+id/passwordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="26dp"
+            app:cipherEnable="true"
+            app:mode="rect"
+            app:borderColor="@color/black"
+            app:passwordLength="6"
+             />
+
+        <TextView
+            android:id="@+id/tv_dialog_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="right"
+
+            android:text="忘记独立密码?"
+            android:textColor="@color/global"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    tools:context="com.jzbwlkj.hengyangdata.ui.activity.AvatarActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:padding="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/avatar_default" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="更换"
+        android:background="@color/global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

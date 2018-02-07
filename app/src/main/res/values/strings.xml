@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">恒阳数据</string>
+    <string name="add_tag"> </string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="please_input_yzm">请输入验证码</string>
+    <string name="please_input_alone">请输入独立密码</string>
+    <string name="please_input_old_pwd">请输入旧密码</string>
+    <string name="please_input_new_pwd">请输入新密码</string>
+</resources>
